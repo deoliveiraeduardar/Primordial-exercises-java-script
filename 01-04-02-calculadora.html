@@ -4,24 +4,28 @@
         function calculo(operacao, num1, num2){
             var resultado;
 
-            if (operacao === 'SOMA') {
-                resultado = num1 + num2;
-            } else if (operacao === 'SUBTRACAO') {
-                resutado = num1 - num2;
-            } else if (operacao === 'MULTIPLICACAO') {
-                resutado = num1 * num2;
-            } else if (operacao === 'DIVISAO') {
-                resutado = num1 / num2;
-            } else if (operacao === 'RESTO') {
-                resutado = num1 % num2;
-            } else if (operacao === 'PORCENTAGEM') {
-                resultado = num1 * num2 / 100;
-            } else {
-                console.log('Operação inválida.');
-            }
+            if (operacao === "SOMA")
+            {resultado = num1 + num2;}
+
+            else if (operacao === "SUBTRACAO")
+            {resutado = num1 - num2;}
+            
+            else if (operacao === "MULTIPLICACAO")
+            {resutado = num1 * num2;}
+            
+            else if (operacao === "DIVISAO")
+            {resutado = num1 / num2;}
+
+            else if (operacao === "RESTO")
+            {resutado = num1 % num2;}
+
+            else if (operacao === "PORCENTAGEM")
+            {resultado = num1 * num2 / 100;}
+            
+            else 
+            {console.log("Operação inválida.")}
             return resultado;
-            var x = calculo ('SOMA', 1, 1);
-            console.log(x)
         }
+        console.log(calculo("SOMA", 1, 1));
     </script>
 </html>
