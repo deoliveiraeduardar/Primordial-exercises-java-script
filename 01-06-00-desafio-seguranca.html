@@ -1,26 +1,56 @@
 <html>
     <script>
         //multiplos de 3 e/ou 5
-        function somaMultiplos3(numero) {
+        function somaMultiplos3ou5(numero) {
             var somaMultiplos3 = 0;
             var contadorMultiplos3 = 0;
 
-            for (var i = 1; i < numero + 1; i++){
-                if (i % 3 === 0){
+            var somaMultiplos5 = 0;
+            var contadorMultiplos5 = 0;
+
+            var soma3e5 = 0;
+            var contador3e5 = 0;
+
+            var somaTotal = 0;
+
+            for (var i = 1; i < numero; i++){
+                if (i % 3 === 0 && i % 5 != 0){
                     // se isso for verdadeiro ...
                     somaMultiplos3 += i;
                     contadorMultiplos3 += 1;
 
-                    //o numero i é divisível por 3
-                    // se for divisível por 3 quero que ele conte (contador_3 += 1) e some soma_3 = + 1
-                console.log('O número', i, 'é múltiplo de 3');
-                console.log('Quantidade de múltiplos de 3 (no interalo de 1 a ', numero,'): ', contadorMultiplos3, 'números');
-                console.log('  - A soma dos valores múltiplos de 3 é:', somaMultiplos3);
+                    //o numero i é divisível somente por 3
+                    console.log('O número', i, 'é múltiplo de 3');
+                    console.log('Quantidade de múltiplos de 3 (no interalo de 1 a ', numero,'): ', contadorMultiplos3, 'números');
+                    console.log('  - A soma dos valores múltiplos de 3 é:', somaMultiplos3);
                 }
+                if (i % 5 === 0 && i % 3 != 0) {
+                    //se isso for verdadeiro...
+                    somaMultiplos5 += i;
+                    contadorMultiplos5 += 1;
 
-            }
-            return somaMultiplos3;
+                    //o numero i é divisível somente por 5
+                    console.log('O número', i, 'é múltiplo de 5');
+                    console.log('Quantidade de múltiplos de 5 (no interalo de 1 a ', numero,'): ', contadorMultiplos5, 'números');
+                    console.log('  - A soma dos valores múltiplos de 5 é:', somaMultiplos5);
+                }
+                if (i % 5 === 0 && i % 3 === 0) {
+                    //se isso for verdadeiro...
+                    soma3e5 += i;
+                    contador3e5 += 1;
 
+                    //o numero i é divisível somente por 5
+                    //console.log('O número', i, 'é múltiplo de 5');
+                    console.log('Quantidade de múltiplos de 5 (no interalo de 1 a ', numero,'): ', contador3e5, 'números');
+                    console.log('  - A soma dos valores múltiplos de 5 é:', soma3e5);
+
+                }
+            var somaTotal = somaMultiplos3 + somaMultiplos5 + soma3e5
+            console.log('SOMA TOTAL:', somaTotal)
+            //está imprimindo a SOMA TOTAL ANTES DOS 18
+            //atualizar né, pois tenho que somar somente 3 com somente 5 com ou
+            //return somaMultiplos3ou5;
         }
+    }
     </script>
 </html>
