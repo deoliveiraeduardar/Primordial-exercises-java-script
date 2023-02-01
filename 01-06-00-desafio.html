@@ -2,11 +2,17 @@
     <script>
         //multiplos de 3 e/ou 5
         function somaMultiplos3(numero) {
+            var somaMultiplos3 = 0;
+
             for (var i = 1; i < numero + 1; i++){
                 if (i % 3 === 0){
+                    // se isso for verdadeiro ...
+                    somaMultiplos3 += i
+
                     //o numero i é divisível por 3
                     // se for divisível por 3 quero que ele conte (contador_3 += 1) e some soma_3 = + 1
-
+                    console.log('O número', i, 'é múltiplo de 3')
+                    console.log(somaMultiplos3)
                 }
             console.log(i)}
             }
