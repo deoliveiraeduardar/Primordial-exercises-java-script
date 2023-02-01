@@ -3,18 +3,23 @@
         //multiplos de 3 e/ou 5
         function somaMultiplos3(numero) {
             var somaMultiplos3 = 0;
+            var contadorMultiplos3 = 0;
 
             for (var i = 1; i < numero + 1; i++){
                 if (i % 3 === 0){
                     // se isso for verdadeiro ...
                     somaMultiplos3 += i
+                    contadorMultiplos3 += 1
 
                     //o numero i é divisível por 3
                     // se for divisível por 3 quero que ele conte (contador_3 += 1) e some soma_3 = + 1
                     console.log('O número', i, 'é múltiplo de 3')
-                    console.log('A soma dos valores múltiplos de 3 é:', somaMultiplos3)
+                    console.log('Quantidade de múltiplos de 3 (no interalo de 1 a ', numero,'): ', contadorMultiplos3, 'números')
+                    console.log('  - A soma dos valores múltiplos de 3 é:', somaMultiplos3)
                 }
             }
-            }
+            return somaMultiplos3;
+            return contadorMultiplos3;
+        }
     </script>
 </html>
