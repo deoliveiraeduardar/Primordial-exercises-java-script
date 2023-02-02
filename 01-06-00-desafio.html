@@ -11,8 +11,6 @@
             var soma3e5 = 0;
             var contador3e5 = 0;
 
-            var somaTotal = 0;
-
             for (var i = 1; i < numero; i++){
                 if (i % 3 === 0 && i % 5 != 0){
                     // se isso for verdadeiro ...
@@ -47,14 +45,14 @@
                 }
                 var somaTotal = somaMultiplos3 + somaMultiplos5 + soma3e5;
                 console.log('SOMA TOTAL:', somaTotal);
+                
+
             //está imprimindo a SOMA TOTAL ANTES DOS 18
             //atualizar né, pois tenho que somar somente 3 com somente 5 com ou
                 //return somaMultiplos3 + somaMultiplos5 + soma3e5
+            }
             
-        }
-            //return somaMultiplos3ou5;
-            
-
+            return somaTotal
             //ativar essas duas de baixo gera problemas e o resultado não carrega
             //soma3ou5 = somaTotal;
             //return soma3ou5;
